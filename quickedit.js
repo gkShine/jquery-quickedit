@@ -1,10 +1,15 @@
 /*
  * Jquery Quickedit 中文叫快速修改插件
  * 使用例子:
- * $('table').multiSelect({
- *  actcls: 'active',
- *  selector: 'tbody tr',
- *  callback: false
+ * $('.table a').quickEdit({
+ *  blur: false,
+ *  checkold: true,
+ *  space: false,
+ *  maxLength: 50,
+ *  showbtn: false,
+ *  submit: function (dom, newValue) {
+ *      dom.text(newValue);
+ *  }
  * });
  */
 (function ($) {

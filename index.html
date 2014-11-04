@@ -68,8 +68,8 @@
             space: false,
             maxLength: 50,
             showbtn: false,
-            submit: function (dom, newDom) {
-                dom.text(newDom);
+            submit: function (dom, newValue) {
+                dom.text(newValue);
             }
         });
 
@@ -80,8 +80,8 @@
                 autosubmit: false,
                 checkold: true,
                 space: false,
-                submit: function (dom, newDom) {
-                    dom.text(newDom);
+                submit: function (dom, newValue) {
+                    dom.text(newValue);
                 },
                 tmpl: '<span class="qe_scope input-group"><span><textarea rows="5" class="qe_input form-control" ></textarea></span>'
                 + '<span class="input-group-btn" style="vertical-align: top;"><button class="btn btn-primary qe_submit" >确定</button>'
